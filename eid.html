@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        background-color: #122c52;
+        height: 55px;
+      }
+
+      nav ul li {
+        list-style: none;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul {
+        display: flex;
+        width: 75%;
+        margin-left: 15%;
+        justify-content: space-around;
+        padding-top: 5px;
+      }
+      li {
+        color: #292929;
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        cursor: pointer;
+      }
+      li:hover {
+        color: #c93b35;
+      }
+
+      .line {
+        border: none;
+        /* background-color: rgba(202, 63, 50, 0.9); */
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 3px;
+        position: relative;
+      }
+
+      .line::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.09rem;
+        left: 0;
+        bottom: 0;
+        background: #28ab68;
+        cursor: pointer;
+      }
+
+      .line-center::after {
+        transform: scale(0, 1);
+        transition: transform 0.3s ease;
+      }
+
+      .line-center:hover::after {
+        transform: scale(1, 1);
+      }
+
+      .line:hover {
+        color: #fff;
+      }
+
+      .top-header ul {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .top-header li {
+        list-style: none;
+        padding: 2px 0 0 1%;
+      }
+
+      .header-2 {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+      }
+
+      .header-2:nth-child(3) {
+        color: #122c52;
+        font-family: Segoe Print;
+        font-size: 27px;
+        font-weight: 300;
+        line-height: 40px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      .footer1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #122c52;
+        padding: 2% 0;
+      }
+      .footer1 a:link {
+        text-decoration: none;
+      }
+      .footer1content {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*	justify-content: space-between;*/
+        box-sizing: border-box;
+      }
+      .listdiv {
+        width: 200px;
+        height: 220px;
+      }
+      .listdiv p {
+        font-family: Arial;
+        font-size: 20px;
+        color: white;
+      }
+      .listdiv ul li {
+        list-style-type: none;
+        font-family: Arial;
+        font-size: 16px;
+        color: #756f6f;
+        margin-left: -40px;
+        line-height: 1.5;
+      }
+      h1 {
+        color: #c93b35;
+        font-family: sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 33px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header  -->
+    <div class="top-header">
+      <ul>
+        <li>RTI</li>
+        <li>TENDERS</li>
+        <li>NOTIFICATION</li>
+        <li>CONTACT US</li>
+      </ul>
+    </div>
+    <hr />
+
+    <div class="header-2">
+      <div style="margin-left: 13%">
+        <img src="header-icon.png" height="90px" alt="" />
+      </div>
+      <div>
+        <font color="#28ab68">I</font>ndian <br />
+        <font color="#28ab68">T</font>ourism
+      </div>
+      <div style="width: 650px"></div>
+      <div>
+        <h1
+          style="
+            color: #777777;
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 38px;
+          "
+        >
+          040-23262328,1800-145-25252 <br />
+          <p
+            style="
+              color: #777777;
+              font-family: sans-serif;
+              font-size: 18px;
+              font-weight: 100;
+              line-height: 30px;
+            "
+          >
+            (Toll Free Timing : 7.30AM-8.30PM)
+          </p>
+        </h1>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="#" class="line line-center">HOME</a></li>
+        <li><a href="#" class="line line-center">ABOUT</a></li>
+        <li><a href="#" class="line line-center">PRACTICAL GUIDE</a></li>
+        <li><a href="#" class="line line-center">DESTINATIONS</a></li>
+        <li><a href="#" class="line line-center">PACKAGES</a></li>
+        <li><a href="#" class="line line-center">STAY</a></li>
+        <li><a href="#" class="line line-center">TRAVEL</a></li>
+        <li><a href="#" class="line line-center">DEPARTMENTS</a></li>
+        <li><a href="#" class="line line-center">MORE</a></li>
+      </ul>
+    </nav>
+
+    <div style="width: 100%; height: 510px; background-color: #f2f2f2">
+      <img
+        style="margin-left: 220px; padding: 2%"
+        src="eid-banner.jpg "
+        height="450px"
+        width="1140px"
+        alt=""
+      />
+    </div>
+
+    <!-- body -->
+    <div style="margin-top: 3%; display: flex">
+      <div style="width: 60%; margin-left: 15%">
+        <h1>Eid al-Fitr</h1>
+        <br />
+        <p
+          style="
+            color: #292929;
+            font-family: sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            word-wrap: normal;
+          "
+        >
+          Eid al-Fitr, also called the "Festival of Breaking the Fast" or Lesser
+          Eid, or simply Eid, is a religious holiday celebrated by Muslims
+          worldwide that marks the end of the month-long dawn-to-sunset fasting
+          of Ramadan. It falls on the first day of Shawwal in the Islamic
+          calendar; this does not always fall on the same Gregorian day, as the
+          start of any lunar Hijri month varies based on when the new moon is
+          sighted by local religious authorities. The holiday is known under
+          various other names in different languages and countries around the
+          world. <br /><br />
+
+          Eid al-Fitr has a particular salat that consists of two rakats
+          generally performed in an open field or large hall. It may only be
+          performed in congregation and features six additional Takbirs in the
+          Hanafi school of Sunni Islam: three at the start of the first rakat
+          and three just before rukūʿ in the second rakat. Other Sunni schools
+          usually have 12 Takbirs, similarly split in groups of seven and five.
+          In Shia Islam, the salat has six Takbirs in the first rakat at the end
+          of qira'a, before rukūʿ, and five in the second. Depending on the
+          juristic opinion of the locality, this salat is either farḍ, mustaḥabb
+          or mandūb. After the salat, Muslims celebrate the Eid al-Fitr in
+          various ways with food being a central theme, which also gives the
+          holiday the nickname "Sweet Eid" or "Sugar Feast".
+        </p>
+      </div>
+      <div
+        style="
+          width: 303px;
+          height: 256px;
+          border: 1px solid black;
+          background-color: #ebebeb;
+        "
+      >
+        <ul style="margin-left: 10%; margin-top: 5%">
+          <li>Eid al-Fitr Downloads</li>
+          <li>Eid al-Fitr Wallpapers</li>
+          <li>Eid al-Fitr Screensavers</li>
+          <li>Eid al-Fitr Image Gallery</li>
+          <li>Visitors Feedback</li>
+          <li>Eid al-Fitr Recipes</li>
+          <li>Thandai Recipes</li>
+          <li>Eid al-Fitr Whatsapp Message</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top: 3%">
+      <h1 align="center">Images Of Eid al-Fitr</h1>
+      <br />
+      <div>
+        <img
+          style="margin-left: 10%"
+          src="eid1.jpg"
+          width="300px"
+          height="300px"
+          alt=""
+        />
+        <img width="300px" height="300px" src="eid2.jpg" />
+        <img width="300px" height="300px" src="eid3.jpg" />
+        <img width="300px" height="300px" src="eid04.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- footer  -->
+
+    <div class="footer1" style="margin-top: 3%">
+      <div class="footer1content">
+        <div class="listdiv">
+          <p style="margin-left: -45px; margin-bottom: 10px">Explore</p>
+          <ul>
+            <li>Classification Schemes</li>
+            <li>Governmental Affairs</li>
+            <li>Media Room</li>
+            <li>Tourism Events</li>
+            <li>Maps</li>
+            <li>Site Map</li>
+          </ul>
+        </div>
+        <div class="listdiv">
+          <p style="margin-left: -45px; margin-bottom: 10px">Travel Hub</p>
+          <ul>
+            <li>India at a Glance</li>
+            <li>Travel Care</li>
+            <li>Where to Stay?</li>
+            <li>How to?</li>
+            <li>Travel Tips</li>
+          </ul>
+        </div>
+        <div class="listdiv">
+          <p style="margin-left: -45px; margin-bottom: 10px">Nature</p>
+          <ul>
+            <li>Hills</li>
+            <li>Backwaters</li>
+            <li>Beaches</li>
+            <li>Wildlife</li>
+            <li>Snowfalls</li>
+          </ul>
+        </div>
+        <div class="listdiv">
+          <p style="margin-left: -45px; margin-bottom: 10px">Places</p>
+          <ul>
+            <li>Manali</li>
+            <li>Agra</li>
+            <li>Shillong</li>
+            <li>Goa</li>
+            <li>Kochi</li>
+          </ul>
+        </div>
+        <div class="listdiv">
+          <p style="margin-left: -45px; margin-bottom: 10px">Specialities</p>
+          <ul>
+            <li>Ayurveda</li>
+            <li>Monsoon</li>
+            <li>Houseboat</li>
+            <li>Treatments</li>
+            <li>Festivals</li>
+          </ul>
+        </div>
+        <div class="listdiv">
+          <p style="margin-left: -45px; margin-bottom: 10px">Videos/Photos</p>
+          <ul>
+            <li>Videos</li>
+            <li>Photos</li>
+            <li>360 Videos</li>
+            <li>Royalty Free Photos</li>
+            <li>Wallpapers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

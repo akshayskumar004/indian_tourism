@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        background-color: #122c52;
+        height: 55px;
+      }
+
+      nav ul li {
+        list-style: none;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul {
+        display: flex;
+        width: 75%;
+        margin-left: 15%;
+        justify-content: space-around;
+        padding-top: 5px;
+      }
+
+      .line {
+        border: none;
+        /* background-color: rgba(202, 63, 50, 0.9); */
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 3px;
+        position: relative;
+      }
+
+      .line::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.09rem;
+        left: 0;
+        bottom: 0;
+        background: #28ab68;
+        cursor: pointer;
+      }
+
+      .line-center::after {
+        transform: scale(0, 1);
+        transition: transform 0.3s ease;
+      }
+
+      .line-center:hover::after {
+        transform: scale(1, 1);
+      }
+
+      .line:hover {
+        color: #fff;
+      }
+
+      .top-header ul {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .top-header li {
+        list-style: none;
+        padding: 2px 0 0 1%;
+      }
+
+      .header-2 {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+      }
+
+      .header-2:nth-child(3) {
+        color: #122c52;
+        font-family: Segoe Print;
+        font-size: 27px;
+        font-weight: 300;
+        line-height: 40px;
+      }
+      .must-dest h2 {
+        color: #2c4058;
+        font-family: Lucida Console;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 26px;
+      }
+      .must-dest h1 {
+        color: #2c4058;
+        font-family: Lucida Console;
+        font-weight: 500;
+        line-height: 26px;
+      }
+      .must-dest p {
+        color: #5a5a5a;
+        font-family: "Segoe Print";
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 29px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .footer1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #122c52;
+        padding: 2% 0;
+      }
+      .footer1 a:link {
+        text-decoration: none;
+      }
+      .footer1content {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*	justify-content: space-between;*/
+        box-sizing: border-box;
+      }
+      .listdiv {
+        width: 200px;
+        height: 220px;
+      }
+      .listdiv p {
+        font-family: Arial;
+        font-size: 20px;
+        color: white;
+      }
+      .listdiv ul li {
+        list-style-type: none;
+        font-family: Arial;
+        font-size: 16px;
+        color: #756f6f;
+        margin-left: -40px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header  -->
+    <div class="top-header">
+      <ul>
+        <li>RTI</li>
+        <li>TENDERS</li>
+        <li>NOTIFICATION</li>
+        <li>CONTACT US</li>
+      </ul>
+    </div>
+    <hr />
+
+    <div class="header-2">
+      <div style="margin-left: 13%">
+        <img src="header-icon.png" height="90px" alt="" />
+      </div>
+      <div>
+        <font color="#28ab68">I</font>ndian <br />
+        <font color="#28ab68">T</font>ourism
+      </div>
+      <div style="width: 650px"></div>
+      <div>
+        <h1
+          style="
+            color: #777777;
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 38px;
+          "
+        >
+          040-23262328,1800-145-25252 <br />
+          <p
+            style="
+              color: #777777;
+              font-family: sans-serif;
+              font-size: 18px;
+              font-weight: 100;
+              line-height: 30px;
+            "
+          >
+            (Toll Free Timing : 7.30AM-8.30PM)
+          </p>
+        </h1>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="#" class="line line-center">HOME</a></li>
+        <li><a href="#" class="line line-center">ABOUT</a></li>
+        <li><a href="#" class="line line-center">PRACTICAL GUIDE</a></li>
+        <li><a href="#" class="line line-center">DESTINATIONS</a></li>
+        <li><a href="#" class="line line-center">PACKAGES</a></li>
+        <li><a href="#" class="line line-center">STAY</a></li>
+        <li><a href="#" class="line line-center">TRAVEL</a></li>
+        <li><a href="#" class="line line-center">DEPARTMENTS</a></li>
+        <li><a href="#" class="line line-center">MORE</a></li>
+      </ul>
+    </nav>
+    <div>
+      <img src="banner.jpeg" height="600px" width="100%" alt="" />
+    </div>
+
+    <div style="margin-top: 2%" class="must-dest">
+      <div align="center">
+        <h1>Must Visit Destinations</h1>
+        <p style="font-size: 19px">
+          From historical cities to natural splendours, come see the best of
+          india
+        </p>
+      </div>
+      <div
+        style="
+          margin-top: 2%;
+          display: flex;
+          width: 75%;
+          margin-left: 15%;
+          justify-content: space-between;
+        "
+      >
+        <div
+          style="
+            width: 250px;
+            box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.75);
+          "
+        >
+          <img
+            src="01.jpeg"
+            height="200px"
+            width="200px"
+            style="border-radius: 25px; padding: 9%"
+            alt=""
+          />
+          <br />
+          <h2 align="center">Statue Of Unity</h2>
+          <p align="center">
+            Its huge,almost <br />
+            gigantic!That is <br />
+            the first reaction of most <br />
+            people..
+          </p>
+        </div>
+        <div
+          style="
+            width: 250px;
+            box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.75);
+          "
+        >
+          <img
+            src="02.jpeg"
+            height="200px"
+            width="200px"
+            style="border-radius: 25px; padding: 9%"
+            alt=""
+          />
+          <br />
+          <h2 align="center">Munnar</h2>
+          <p align="center">
+            A lush carpet of <br />
+            rolling green, <br />
+            interrepted by low <br />
+            rises of mountain...
+          </p>
+        </div>
+        <div
+          style="
+            width: 250px;
+            box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.75);
+          "
+        >
+          <img
+            src="03.jpeg"
+            height="200px"
+            width="200px"
+            style="border-radius: 25px; padding: 9%"
+            alt=""
+          />
+          <br />
+          <h2 align="center">Shillong</h2>
+          <p align="center">
+            Colonial-era charm,a <br />
+            landscape of rolling <br />
+            green and pristine... <br />
+          </p>
+        </div>
+        <div
+          style="
+            width: 250px;
+            box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.75);
+          "
+        >
+          <img
+            src="04.jpeg"
+            height="200px"
+            width="200px"
+            style="border-radius: 25px; padding: 9%"
+            alt=""
+          />
+          <br />
+          <h2 align="center">Goa</h2>
+          <p align="center">
+            The pocket-sized <br />
+            paradise of Goa is a <br />
+            Traveller's dream <br />
+            Sun Sea...
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- video  -->
+
+    <div
+      style="
+        margin-top: 3%;
+        width: 100%;
+        height: 600px;
+        background-image: linear-gradient(to right, #234f61, #27a366);
+      "
+    >
+      <h1
+        align="center"
+        style="
+          color: #fff;
+          font-family: Lucida Console;
+          padding-top: 7%;
+          font-size: 40px;
+          font-weight: 500;
+          line-height: 26px;
+        "
+      >
+        Witness the picturesque beauty of #India
+      </h1>
+      <div style="padding-top: 2%">
+        <iframe
+          style="margin-left: 26%"
+          ;
+          width="623"
+          height="350"
+          src="https://www.youtube.com/embed/4iDx-ctQkiQ?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Festivals Of India  -->
+
+    <div style="margin-top: 2%" class="must-dest">
+      <div align="center">
+        <h1>Festivals Of India</h1>
+        <p style="font-size: 19px">
+          A land of festivals and fairs, come see the best of india
+        </p>
+      </div>
+      <div
+        style="
+          margin-top: 2%;
+          display: flex;
+          width: 100%;
+          margin-left: 0%;
+          justify-content: space-evenly;
+        "
+      >
+        <div
+          style="
+            width: 250px;
+            height: 400px;
+            box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.75);
+          "
+        >
+          <a href="#">
+            <img
+              src="holi.jpg"
+              height="200px"
+              width="200px"
+              style="border-radius: 25px; padding: 5%; margin-left: 13px"
+              alt=""
+            />
+            <br />
+            <h2 align="center">Holi</h2>
+            <p align="center">
+              Holi is a popular <br />
+              ancient Indian festival, <br />
+              also known as the "Festival of Colors".. <br />
+            </p>
+          </a>
+        </div>
+        <div
+          style="
+            width: 250px;
+            height: 400px;
+            box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.75);
+          "
+        >
+          <a href="#"
+            ><img
+              src="diwali.jpg"
+              height="200px"
+              width="200px"
+              style="border-radius: 25px; padding: 5%; margin-left: 13px"
+              alt="" />
+            <br />
+            <h2 align="center">Diwali</h2>
+            <p align="center">
+              Is a festival of lights <br />
+              and one of the major <br />
+              festivals of India. <br /></p
+          ></a>
+        </div>
+        <div
+          style="
+            width: 250px;
+            height: 400px;
+            box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.75);
+          "
+        >
+          <a href="#">
+            <img
+              src="eid.jpg"
+              height="200px"
+              width="200px"
+              style="border-radius: 25px; padding: 5%; margin-left: 13px"
+              alt=""
+            />
+            <br />
+            <h2 align="center">Eid al-Fitr</h2>
+            <p align="center">
+              "Festival of Breaking the Fast" is a religious holiday celebrated
+              by Muslims <br />
+            </p>
+          </a>
+        </div>
+        <div
+          style="
+            width: 250px;
+            height: 400px;
+            box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.75);
+          "
+        >
+          <a href="#">
+            <img
+              src="onam.jpg"
+              height="200px"
+              width="200px"
+              style="border-radius: 25px; padding: 5%; margin-left: 13px"
+              alt=""
+            />
+            <br />
+            <h2 align="center">Onam</h2>
+            <p align="center">
+              Onam is an annual festival celebrated in southern Indian state of
+              Kerala. It is a harvest festival.
+            </p>
+          </a>
+        </div>
+        <div
+          style="
+            width: 250px;
+            height: 400px;
+            box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.75);
+          "
+        >
+          <a href="#">
+            <img
+              src="pongal.jpg"
+              height="200px"
+              width="200px"
+              style="border-radius: 25px; padding: 5%; margin-left: 13px"
+              alt=""
+            />
+            <br />
+            <h2 align="center">Pongal</h2>
+            <p align="center">
+              Pongal is also referred to as Thai Pongal is a multi-day harvest
+              festival of South India and Tamil diaspora.
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- video 2 -->
+
+    <div
+      style="
+        margin-top: 3%;
+        width: 100%;
+        height: 600px;
+        margin-bottom: 2%;
+        background-image: linear-gradient(to right, blue, red);
+      "
+    >
+      <h1
+        align="center"
+        style="
+          color: #fff;
+          font-family: Lucida Console;
+          padding-top: 7%;
+          font-size: 40px;
+          font-weight: 500;
+          line-height: 26px;
+        "
+      >
+        A land of Festivals and Fairs #India
+      </h1>
+      <div style="padding-top: 2%">
+        <iframe
+          style="margin-left: 26%"
+          width="623"
+          height="350"
+          src="https://www.youtube.com/embed/vOd_cTovo-8?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- footer  -->
+
+    <div class="footer1">
+      <div class="footer1content">
+        <div class="listdiv">
+          <p style="margin-left: -45px; margin-bottom: 10px">Explore</p>
+          <ul>
+            <li>Classification Schemes</li>
+            <li>Governmental Affairs</li>
+            <li>Media Room</li>
+            <li>Tourism Events</li>
+            <li>Maps</li>
+            <li>Site Map</li>
+          </ul>
+        </div>
+        <div class="listdiv">
+          <p style="margin-left: -45px; margin-bottom: 10px">Travel Hub</p>
+          <ul>
+            <li>India at a Glance</li>
+            <li>Travel Care</li>
+            <li>Where to Stay?</li>
+            <li>How to?</li>
+            <li>Travel Tips</li>
+          </ul>
+        </div>
+        <div class="listdiv">
+          <p style="margin-left: -45px; margin-bottom: 10px">Nature</p>
+          <ul>
+            <li>Hills</li>
+            <li>Backwaters</li>
+            <li>Beaches</li>
+            <li>Wildlife</li>
+            <li>Snowfalls</li>
+          </ul>
+        </div>
+        <div class="listdiv">
+          <p style="margin-left: -45px; margin-bottom: 10px">Places</p>
+          <ul>
+            <li>Manali</li>
+            <li>Agra</li>
+            <li>Shillong</li>
+            <li>Goa</li>
+            <li>Kochi</li>
+          </ul>
+        </div>
+        <div class="listdiv">
+          <p style="margin-left: -45px; margin-bottom: 10px">Specialities</p>
+          <ul>
+            <li>Ayurveda</li>
+            <li>Monsoon</li>
+            <li>Houseboat</li>
+            <li>Treatments</li>
+            <li>Festivals</li>
+          </ul>
+        </div>
+        <div class="listdiv">
+          <p style="margin-left: -45px; margin-bottom: 10px">Videos/Photos</p>
+          <ul>
+            <li>Videos</li>
+            <li>Photos</li>
+            <li>360 Videos</li>
+            <li>Royalty Free Photos</li>
+            <li>Wallpapers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
